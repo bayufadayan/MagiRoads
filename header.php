@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rental Mobil </title>
+    <title>Rental Mobil</title>
 
     <!-- Boostrape dan Font Awesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -35,21 +35,41 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse d-flex justify-content-between px-2" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <!-- Navigasi umum, dapat di akses siapa pun -->
+                    <!-- Nanti href nya di isi, liat di halaman 45 -->
                     <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Daftar Mobil</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Kontak Kami</a>
                     </li>
                     <!-- Navigasi dengan session user, disini akan ada tag php untuk authentikasi ada user atau tidak -->
-                    
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="#">History</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <!-- Tag penutup dari if session nya -->
                 </ul>
+
+                <!-- Lagi lagi di sini akan ada tag untuk session user. sama percis seperti di atas -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-user ms-2 me-1"></i> Hallo, Magitas!</a> <!-- Di samping hallo akan ada tag php untuk mengambil nama user dari database-->
+                    </li>
+
+                    <li class="nav-item ">
+                        <!-- Disini ada variabel url nah ini ngga tau dari mana, nanti cari tau -->
+                        <a class="nav-link" aria-current="page" href="<?php echo $url ?> admin/logout.php" onclick="return confirm('Apakah anda ingin Logout?')">Logout</a>
+                    </li>
+                </ul>
+                <!-- Tag penutup -->
             </div>
         </div>
     </nav>
