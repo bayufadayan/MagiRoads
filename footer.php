@@ -1,6 +1,7 @@
 <div class="footer mt-4 bg-dark text-white pt-3 pb-2">
     <div class="container">
-        Copyright bayu rental All Reverved
+        <!-- nanti ada tag php untuk ngambil tahun dan juga nama rental nya di info web -->
+        Copyright &copy; 2024 MagiRoads
     </div>
 </div>
 
